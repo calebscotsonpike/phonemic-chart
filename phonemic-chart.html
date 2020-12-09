@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+
+<head>
+    <title>Phonemic Chart</title>
+    <meta name="author" content="Caleb Scotson Pike">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="last-modified" content="2020-12-09">
+</head>
+
+<style>
+    table {
+        table-layout: fixed;
+        width: 100%;
+        text-align: center;
+        padding: 5px;
+        font-size: 1.5vw;
+        border-collapse: separate;
+        border-spacing: 10px;
+    }
+
+    td {
+        width: 10%;
+        border: 4px solid rgba(255, 255, 255, 0.5);
+    }
+
+    button {
+        background: rgba(255, 255, 255, 0.5);
+        width: 90%;
+        height: 90%;
+        text-align: center;
+        padding: 5px;
+        font-size: 2.5vw;
+        outline: none;
+    }
+
+    .diphthong-cell {
+        background: rgba(0, 90, 255, 0.5);
+    }
+
+    .monophthong-cell {
+        background: rgba(255, 0, 0, 0.5);
+    }
+
+    .consonant-cell {
+        background: rgba(255, 255, 0, 0.5);
+    }
+</style>
+
+<body>
+
+    <table>
+        <caption>Phonemic Chart</caption>
+        <tr id="row1">
+            <th id="column1"></th>
+            <th id="column2">monophthongs</th>
+            <th id="column3"></th>
+            <th id="column4"></th>
+            <th id="column5"></th>
+            <th id="column6">diphthongs</th>
+            <th id="column7"></th>
+            <th id="column8"></th>
+            <th id="column9"></th>
+        </tr>
+        <tr id="row2">
+            <td><strong>vowels</strong></td>
+            <td class="monophthong-cell"><button type="button"
+                    onclick="PlayEranu()">i:</button><br />sh<u><strong>ee</strong></u>p</td>
+            <td class="monophthong-cell"><button type="button"
+                    onclick="PlayUvavu()">ɪ</button><br />sh<u><strong>i</strong></u>p</td>
+            <td class="monophthong-cell"><button type="button"
+                    onclick="PlayAha()">ʊ</button><br />g<u><strong>oo</strong></u>d</td>
+            <td class="monophthong-cell"><button type="button"
+                    onclick="PlayEranu()">u:</button><br />sh<u><strong>oo</strong></u>t</td>
+            <td class="diphthong-cell"><button type="button"
+                    onclick="PlayUvavu()">ɪə</button><br />h<u><strong>ere</strong></u></td>
+            <td class="diphthong-cell"><button type="button"
+                    onclick="PlayAha()">eɪ</button><br />w<u><strong>ai</strong></u>t</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr id="row3">
+            <td></td>
+            <td class="monophthong-cell"><button type="button"
+                    onclick="PlayUvavu()">e</button><br />b<u><strong>e</strong></u>d</td>
+            <td class="monophthong-cell"><button type="button"
+                    onclick="PlayAha()">ə</button><br />teach<u><strong>e</strong></u>r</td>
+            <td class="monophthong-cell"><button type="button"
+                    onclick="PlayEranu()">ɜ:</button><br />b<u><strong>ir</strong></u>d</td>
+            <td class="monophthong-cell"><button type="button"
+                    onclick="PlayUvavu()">ɔ:</button><br />d<u><strong>oo</strong></u>r</td>
+            <td class="diphthong-cell"><button type="button"
+                    onclick="PlayAha()">ʊə</button><br />t<u><strong>ou</strong></u>rist</td>
+            <td class="diphthong-cell"><button type="button"
+                    onclick="PlayEranu()">ɔɪ</button><br />b<u><strong>oy</strong></u></td>
+            <td class="diphthong-cell"><button type="button"
+                    onclick="PlayUvavu()">əʊ</button><br />sh<u><strong>ow</strong></u></td>
+            <td></td>
+        </tr>
+        <tr id="row4">
+            <td></td>
+            <td class="monophthong-cell"><button type="button"
+                    onclick="PlayAha()">æ</button><br />c<u><strong>a</strong></u>t</td>
+            <td class="monophthong-cell"><button type="button"
+                    onclick="PlayEranu()">ʌ</button><br /><u><strong>u</strong></u>p</td>
+            <td class="monophthong-cell"><button type="button"
+                    onclick="PlayUvavu()">ɑ:</button><br />f<u><strong>ar</strong></u></td>
+            <td class="monophthong-cell"><button type="button"
+                    onclick="PlayAha()">ɒ</button><br /><u><strong>o</strong></u>n</td>
+            <td class="diphthong-cell"><button type="button"
+                    onclick="PlayEranu()">eə</button><br />h<u><strong>air</strong></u></td>
+            <td class="diphthong-cell"><button type="button"
+                    onclick="PlayUvavu()">aɪ</button><br />m<u><strong>y</strong></u></td>
+            <td class="diphthong-cell"><button type="button"
+                    onclick="PlayAha()">aʊ</button><br />c<u><strong>ow</strong></u></td>
+            <td></td>
+        </tr>
+        <tr id="row5" class="consonant-cell">
+            <td><strong>consonants</strong></td>
+            <td><button type="button" onclick="PlayEranu()">p</button><br /><u><strong>p</strong></u>ea</td>
+            <td><button type="button" onclick="PlayUvavu()">b</button><br /><u><strong>b</strong></u>oat</td>
+            <td><button type="button" onclick="PlayAha()">t</button><br /><u><strong>t</strong></u>ea</td>
+            <td><button type="button" onclick="PlayEranu()">d</button><br /><u><strong>d</strong></u>og</td>
+            <td><button type="button" onclick="PlayUvavu()">tʃ</button><br /><u><strong>ch</strong></u>eese</td>
+            <td><button type="button" onclick="PlayAha()">dʒ</button><br /><u><strong>J</strong></u>une</td>
+            <td><button type="button" onclick="PlayEranu()">k</button><br /><u><strong>c</strong></u>ar</td>
+            <td><button type="button" onclick="PlayUvavu()">g</button><br /><u><strong>g</strong></u>o</td>
+        </tr>
+        <tr id="row6" class="consonant-cell">
+            <td></td>
+            <td><button type="button" onclick="PlayUvavu()">f</button><br /><u><strong>f</strong></u>ly</td>
+            <td><button type="button" onclick="PlayAha()">v</button><br /><u><strong>v</strong></u>ideo</td>
+            <td><button type="button" onclick="PlayEranu()">θ</button><br /><u><strong>th</strong></u>ink</td>
+            <td><button type="button" onclick="PlayUvavu()">ð</button><br /><u><strong>th</strong></u>is</td>
+            <td><button type="button" onclick="PlayAha()">s</button><br /><u><strong>s</strong></u>ee</td>
+            <td><button type="button" onclick="PlayEranu()">z</button><br /><u><strong>z</strong></u>oo</td>
+            <td><button type="button" onclick="PlayUvavu()">ʃ</button><br /><u><strong>sh</strong></u>all</td>
+            <td><button type="button" onclick="PlayAha()">ʒ</button><br />televi<u><strong>s</strong></u>ion</td>
+        </tr>
+        <tr id="row7" class="consonant-cell">
+            <td></td>
+            <td><button type="button" onclick="PlayAha()">m</button><br /><u><strong>m</strong></u>an</td>
+            <td><button type="button" onclick="PlayEranu()">n</button><br /><u><strong>n</strong></u>ow</td>
+            <td><button type="button" onclick="PlayUvavu()">ŋ</button><br />si<u><strong>ng</strong></u></td>
+            <td><button type="button" onclick="PlayAha()">h</button><br /><u><strong>h</strong></u>at</td>
+            <td><button type="button" onclick="PlayEranu()">l</button><br /><u><strong>l</strong></u>ove</td>
+            <td><button type="button" onclick="PlayUvavu()">r</button><br /><u><strong>r</strong></u>ed</td>
+            <td><button type="button" onclick="PlayAha()">w</button><br /><u><strong>w</strong></u>et</td>
+            <td><button type="button" onclick="PlayEranu()">j</button><br /><u><strong>y</strong></u>es</td>
+        </tr>
+    </table>
+
+    <script>
+        var eranu = new Audio();
+        eranu.src = "https://static1.squarespace.com/static/5f57c8da5b4e905978984460/t/5fc4e0571972c46e3c3653b1/1606738009560/download_eranu.mp3/original/download_eranu.mp3";
+        var uvavu = new Audio();
+        uvavu.src = "https://static1.squarespace.com/static/5f57c8da5b4e905978984460/t/5fc4e06be18c5c478e94bcda/1606738029069/download_uvavu.mp3/original/download_uvavu.mp3";
+        var aha = new Audio();
+        aha.src = "https://static1.squarespace.com/static/5f57c8da5b4e905978984460/t/5fc7c12f3ac9c763f4e41791/1606926640551/alan-partridge-aha.mp3/original/alan-partridge-aha.mp3";
+        function PlayEranu() {
+            eranu.play();
+        }
+        function PlayUvavu() {
+            uvavu.play();
+        }
+        function PlayAha() {
+            aha.play();
+        }
+    </script>
+
+</body>
+
+</html>
