@@ -1,4 +1,4 @@
-#phonemic-chart
+# phonemic-chart
 
 README for phonemic-chart
 
