@@ -5,7 +5,7 @@
     <title>Phonemic Chart</title>
     <meta name="author" content="Caleb Scotson Pike">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="last-modified" content="2020-12-09">
+    <meta http-equiv="last-modified" content="2020-12-31">
 </head>
 
 <style>
@@ -50,7 +50,7 @@
 <body>
 
     <table>
-        <caption>Phonemic Chart</caption>
+        <caption>Interactive Phonemic Chart</caption>
         <tr id="row1">
             <th id="column1"></th>
             <th id="column2">monophthongs</th>
@@ -65,106 +65,354 @@
         <tr id="row2">
             <td><strong>vowels</strong></td>
             <td class="monophthong-cell"><button type="button"
-                    onclick="PlayEranu()">i:</button><br />sh<u><strong>ee</strong></u>p</td>
+                    onclick="PlaySheep()">i:</button><br />sh<u><strong>ee</strong></u>p</td>
             <td class="monophthong-cell"><button type="button"
-                    onclick="PlayUvavu()">ɪ</button><br />sh<u><strong>i</strong></u>p</td>
+                    onclick="PlayShip()">ɪ</button><br />sh<u><strong>i</strong></u>p</td>
             <td class="monophthong-cell"><button type="button"
-                    onclick="PlayAha()">ʊ</button><br />g<u><strong>oo</strong></u>d</td>
+                    onclick="PlayGood()">ʊ</button><br />g<u><strong>oo</strong></u>d</td>
             <td class="monophthong-cell"><button type="button"
-                    onclick="PlayEranu()">u:</button><br />sh<u><strong>oo</strong></u>t</td>
+                    onclick="PlayShoot()">u:</button><br />sh<u><strong>oo</strong></u>t</td>
             <td class="diphthong-cell"><button type="button"
-                    onclick="PlayUvavu()">ɪə</button><br />h<u><strong>ere</strong></u></td>
+                    onclick="PlayHere()">ɪə</button><br />h<u><strong>ere</strong></u></td>
             <td class="diphthong-cell"><button type="button"
-                    onclick="PlayAha()">eɪ</button><br />w<u><strong>ai</strong></u>t</td>
+                    onclick="PlayWait()">eɪ</button><br />w<u><strong>ai</strong></u>t</td>
             <td></td>
             <td></td>
         </tr>
         <tr id="row3">
             <td></td>
             <td class="monophthong-cell"><button type="button"
-                    onclick="PlayUvavu()">e</button><br />b<u><strong>e</strong></u>d</td>
+                    onclick="PlayBed()">e</button><br />b<u><strong>e</strong></u>d</td>
             <td class="monophthong-cell"><button type="button"
-                    onclick="PlayAha()">ə</button><br />teach<u><strong>e</strong></u>r</td>
+                    onclick="PlayTeacher()">ə</button><br />teach<u><strong>e</strong></u>r</td>
             <td class="monophthong-cell"><button type="button"
-                    onclick="PlayEranu()">ɜ:</button><br />b<u><strong>ir</strong></u>d</td>
+                    onclick="PlayBird()">ɜ:</button><br />b<u><strong>ir</strong></u>d</td>
             <td class="monophthong-cell"><button type="button"
-                    onclick="PlayUvavu()">ɔ:</button><br />d<u><strong>oo</strong></u>r</td>
+                    onclick="PlayDoor()">ɔ:</button><br />d<u><strong>oo</strong></u>r</td>
             <td class="diphthong-cell"><button type="button"
-                    onclick="PlayAha()">ʊə</button><br />t<u><strong>ou</strong></u>rist</td>
+                    onclick="PlayTourist()">ʊə</button><br />t<u><strong>ou</strong></u>rist</td>
             <td class="diphthong-cell"><button type="button"
-                    onclick="PlayEranu()">ɔɪ</button><br />b<u><strong>oy</strong></u></td>
+                    onclick="PlayBoy()">ɔɪ</button><br />b<u><strong>oy</strong></u></td>
             <td class="diphthong-cell"><button type="button"
-                    onclick="PlayUvavu()">əʊ</button><br />sh<u><strong>ow</strong></u></td>
+                    onclick="PlayShow()">əʊ</button><br />sh<u><strong>ow</strong></u></td>
             <td></td>
         </tr>
         <tr id="row4">
             <td></td>
             <td class="monophthong-cell"><button type="button"
-                    onclick="PlayAha()">æ</button><br />c<u><strong>a</strong></u>t</td>
+                    onclick="PlayCat()">æ</button><br />c<u><strong>a</strong></u>t</td>
             <td class="monophthong-cell"><button type="button"
-                    onclick="PlayEranu()">ʌ</button><br /><u><strong>u</strong></u>p</td>
+                    onclick="PlayUp()">ʌ</button><br /><u><strong>u</strong></u>p</td>
             <td class="monophthong-cell"><button type="button"
-                    onclick="PlayUvavu()">ɑ:</button><br />f<u><strong>ar</strong></u></td>
+                    onclick="PlayFar()">ɑ:</button><br />f<u><strong>ar</strong></u></td>
             <td class="monophthong-cell"><button type="button"
-                    onclick="PlayAha()">ɒ</button><br /><u><strong>o</strong></u>n</td>
+                    onclick="PlayOn()">ɒ</button><br /><u><strong>o</strong></u>n</td>
             <td class="diphthong-cell"><button type="button"
-                    onclick="PlayEranu()">eə</button><br />h<u><strong>air</strong></u></td>
+                    onclick="PlayHair()">eə</button><br />h<u><strong>air</strong></u></td>
             <td class="diphthong-cell"><button type="button"
-                    onclick="PlayUvavu()">aɪ</button><br />m<u><strong>y</strong></u></td>
+                    onclick="PlayMy()">aɪ</button><br />m<u><strong>y</strong></u></td>
             <td class="diphthong-cell"><button type="button"
-                    onclick="PlayAha()">aʊ</button><br />c<u><strong>ow</strong></u></td>
+                    onclick="PlayCow()">aʊ</button><br />c<u><strong>ow</strong></u></td>
             <td></td>
         </tr>
         <tr id="row5" class="consonant-cell">
             <td><strong>consonants</strong></td>
-            <td><button type="button" onclick="PlayEranu()">p</button><br /><u><strong>p</strong></u>ea</td>
-            <td><button type="button" onclick="PlayUvavu()">b</button><br /><u><strong>b</strong></u>oat</td>
-            <td><button type="button" onclick="PlayAha()">t</button><br /><u><strong>t</strong></u>ea</td>
-            <td><button type="button" onclick="PlayEranu()">d</button><br /><u><strong>d</strong></u>og</td>
-            <td><button type="button" onclick="PlayUvavu()">tʃ</button><br /><u><strong>ch</strong></u>eese</td>
-            <td><button type="button" onclick="PlayAha()">dʒ</button><br /><u><strong>J</strong></u>une</td>
-            <td><button type="button" onclick="PlayEranu()">k</button><br /><u><strong>c</strong></u>ar</td>
-            <td><button type="button" onclick="PlayUvavu()">g</button><br /><u><strong>g</strong></u>o</td>
+            <td><button type="button" onclick="PlayPea()">p</button><br /><u><strong>p</strong></u>ea</td>
+            <td><button type="button" onclick="PlayBoat()">b</button><br /><u><strong>b</strong></u>oat</td>
+            <td><button type="button" onclick="PlayTea()">t</button><br /><u><strong>t</strong></u>ea</td>
+            <td><button type="button" onclick="PlayDog()">d</button><br /><u><strong>d</strong></u>og</td>
+            <td><button type="button" onclick="PlayCheese()">tʃ</button><br /><u><strong>ch</strong></u>eese</td>
+            <td><button type="button" onclick="PlayJune()">dʒ</button><br /><u><strong>J</strong></u>une</td>
+            <td><button type="button" onclick="PlayCar()">k</button><br /><u><strong>c</strong></u>ar</td>
+            <td><button type="button" onclick="PlayGo()">g</button><br /><u><strong>g</strong></u>o</td>
         </tr>
         <tr id="row6" class="consonant-cell">
             <td></td>
-            <td><button type="button" onclick="PlayUvavu()">f</button><br /><u><strong>f</strong></u>ly</td>
-            <td><button type="button" onclick="PlayAha()">v</button><br /><u><strong>v</strong></u>ideo</td>
-            <td><button type="button" onclick="PlayEranu()">θ</button><br /><u><strong>th</strong></u>ink</td>
-            <td><button type="button" onclick="PlayUvavu()">ð</button><br /><u><strong>th</strong></u>is</td>
-            <td><button type="button" onclick="PlayAha()">s</button><br /><u><strong>s</strong></u>ee</td>
-            <td><button type="button" onclick="PlayEranu()">z</button><br /><u><strong>z</strong></u>oo</td>
-            <td><button type="button" onclick="PlayUvavu()">ʃ</button><br /><u><strong>sh</strong></u>all</td>
-            <td><button type="button" onclick="PlayAha()">ʒ</button><br />televi<u><strong>s</strong></u>ion</td>
+            <td><button type="button" onclick="PlayFly()">f</button><br /><u><strong>f</strong></u>ly</td>
+            <td><button type="button" onclick="PlayVideo()">v</button><br /><u><strong>v</strong></u>ideo</td>
+            <td><button type="button" onclick="PlayThink()">θ</button><br /><u><strong>th</strong></u>ink</td>
+            <td><button type="button" onclick="PlayThisaud()">ð</button><br /><u><strong>th</strong></u>is</td>
+            <td><button type="button" onclick="PlaySee()">s</button><br /><u><strong>s</strong></u>ee</td>
+            <td><button type="button" onclick="PlayZoo()">z</button><br /><u><strong>z</strong></u>oo</td>
+            <td><button type="button" onclick="PlayShall()">ʃ</button><br /><u><strong>sh</strong></u>all</td>
+            <td><button type="button" onclick="PlayTelevision()">ʒ</button><br />televi<u><strong>s</strong></u>ion</td>
         </tr>
         <tr id="row7" class="consonant-cell">
             <td></td>
-            <td><button type="button" onclick="PlayAha()">m</button><br /><u><strong>m</strong></u>an</td>
-            <td><button type="button" onclick="PlayEranu()">n</button><br /><u><strong>n</strong></u>ow</td>
-            <td><button type="button" onclick="PlayUvavu()">ŋ</button><br />si<u><strong>ng</strong></u></td>
-            <td><button type="button" onclick="PlayAha()">h</button><br /><u><strong>h</strong></u>at</td>
-            <td><button type="button" onclick="PlayEranu()">l</button><br /><u><strong>l</strong></u>ove</td>
-            <td><button type="button" onclick="PlayUvavu()">r</button><br /><u><strong>r</strong></u>ed</td>
-            <td><button type="button" onclick="PlayAha()">w</button><br /><u><strong>w</strong></u>et</td>
-            <td><button type="button" onclick="PlayEranu()">j</button><br /><u><strong>y</strong></u>es</td>
+            <td><button type="button" onclick="PlayMan()">m</button><br /><u><strong>m</strong></u>an</td>
+            <td><button type="button" onclick="PlayNow()">n</button><br /><u><strong>n</strong></u>ow</td>
+            <td><button type="button" onclick="PlaySing()">ŋ</button><br />si<u><strong>ng</strong></u></td>
+            <td><button type="button" onclick="PlayHat()">h</button><br /><u><strong>h</strong></u>at</td>
+            <td><button type="button" onclick="PlayLove()">l</button><br /><u><strong>l</strong></u>ove</td>
+            <td><button type="button" onclick="PlayRed()">r</button><br /><u><strong>r</strong></u>ed</td>
+            <td><button type="button" onclick="PlayWet()">w</button><br /><u><strong>w</strong></u>et</td>
+            <td><button type="button" onclick="PlayYes()">j</button><br /><u><strong>y</strong></u>es</td>
         </tr>
     </table>
 
     <script>
-        var eranu = new Audio();
-        eranu.src = "https://static1.squarespace.com/static/5f57c8da5b4e905978984460/t/5fc4e0571972c46e3c3653b1/1606738009560/download_eranu.mp3/original/download_eranu.mp3";
-        var uvavu = new Audio();
-        uvavu.src = "https://static1.squarespace.com/static/5f57c8da5b4e905978984460/t/5fc4e06be18c5c478e94bcda/1606738029069/download_uvavu.mp3/original/download_uvavu.mp3";
-        var aha = new Audio();
-        aha.src = "https://static1.squarespace.com/static/5f57c8da5b4e905978984460/t/5fc7c12f3ac9c763f4e41791/1606926640551/alan-partridge-aha.mp3/original/alan-partridge-aha.mp3";
-        function PlayEranu() {
-            eranu.play();
+        var sheep = new Audio();
+        sheep.src = "https://static1.squarespace.com/static/5f57c8da5b4e905978984460/t/5fece7c3b6dc0c1e61532347/1609361348764/01+sheep.mp3/original/01+sheep.mp3";
+        function PlaySheep() {
+            sheep.play();
         }
-        function PlayUvavu() {
-            uvavu.play();
+
+        var ship = new Audio();
+        ship.src = "https://static1.squarespace.com/static/5f57c8da5b4e905978984460/t/5fece7d80f96794605698a8c/1609361369965/02+ship.mp3/original/02+ship.mp3";
+        function PlayShip() {
+            ship.play();
         }
-        function PlayAha() {
-            aha.play();
+
+        var good = new Audio();
+        good.src = "https://static1.squarespace.com/static/5f57c8da5b4e905978984460/t/5fece7ec10ee9f59220a149c/1609361389009/03+good.mp3/original/03+good.mp3";
+        function PlayGood() {
+            good.play();
+        }
+
+        var shoot = new Audio();
+        shoot.src = "https://static1.squarespace.com/static/5f57c8da5b4e905978984460/t/5fece80117af6f5d19d32e16/1609361410973/04+shoot.mp3/original/04+shoot.mp3";
+        function PlayShoot() {
+            shoot.play();
+        }
+
+        var bed = new Audio();
+        bed.src = "https://static1.squarespace.com/static/5f57c8da5b4e905978984460/t/5fece815a6a0ae63d683eab5/1609361430206/05+bed.mp3/original/05+bed.mp3";
+        function PlayBed() {
+            bed.play();
+        }
+
+        var teacher = new Audio();
+        teacher.src = "https://static1.squarespace.com/static/5f57c8da5b4e905978984460/t/5fece82adac66e1e167201ed/1609361451658/06+teacher.mp3/original/06+teacher.mp3";
+        function PlayTeacher() {
+            teacher.play();
+        }
+
+        var bird = new Audio();
+        bird.src = "https://static1.squarespace.com/static/5f57c8da5b4e905978984460/t/5fece83c89898a72c703ae58/1609361469900/07+bird.mp3/original/07+bird.mp3";
+        function PlayBird() {
+            bird.play();
+        }
+
+        var door = new Audio();
+        door.src = "https://static1.squarespace.com/static/5f57c8da5b4e905978984460/t/5fece85c89898a72c703b2f7/1609361501586/08+door.mp3/original/08+door.mp3";
+        function PlayDoor() {
+            door.play();
+        }
+
+        var cat = new Audio();
+        cat.src = "https://static1.squarespace.com/static/5f57c8da5b4e905978984460/t/5fece886ac5ecf06b6bc7778/1609361543257/09+cat.mp3/original/09+cat.mp3";
+        function PlayCat() {
+            cat.play();
+        }
+
+        var up = new Audio();
+        up.src = "https://static1.squarespace.com/static/5f57c8da5b4e905978984460/t/5fece897461d8d43a374cad7/1609361561332/10+up.mp3/original/10+up.mp3";
+        function PlayUp() {
+            up.play();
+        }
+
+        var far = new Audio();
+        far.src = "https://static1.squarespace.com/static/5f57c8da5b4e905978984460/t/5fece8b1289de731b355ae71/1609361586941/11+far.mp3/original/11+far.mp3";
+        function PlayFar() {
+            far.play();
+        }
+
+        var on = new Audio();
+        on.src = "https://static1.squarespace.com/static/5f57c8da5b4e905978984460/t/5fece8d1673a147fcc3bf8eb/1609361618818/12+on.mp3/original/12+on.mp3";
+        function PlayOn() {
+            on.play();
+        }
+
+        var here = new Audio();
+        here.src = "https://static1.squarespace.com/static/5f57c8da5b4e905978984460/t/5fece8ed673a147fcc3bfd4d/1609361646460/13+here.mp3/original/13+here.mp3";
+        function PlayHere() {
+            here.play();
+        }
+
+        var wait = new Audio();
+        wait.src = "https://static1.squarespace.com/static/5f57c8da5b4e905978984460/t/5fece8ffefa5e06e3cb2ec1f/1609361665188/14+wait.mp3/original/14+wait.mp3";
+        function PlayWait() {
+            wait.play();
+        }
+
+        var tourist = new Audio();
+        tourist.src = "https://static1.squarespace.com/static/5f57c8da5b4e905978984460/t/5feda52017af6f5d19e9f4ad/1609409826025/15b+tourist.mp3/original/15b+tourist.mp3";
+        function PlayTourist() {
+            tourist.play();
+        }
+
+        var boy = new Audio();
+        boy.src = "https://static1.squarespace.com/static/5f57c8da5b4e905978984460/t/5fece9728268c96dbbe3c3b7/1609361780286/16+boy.mp3/original/16+boy.mp3";
+        function PlayBoy() {
+            boy.play();
+        }
+
+        var show = new Audio();
+        show.src = "https://static1.squarespace.com/static/5f57c8da5b4e905978984460/t/5fece985673a147fcc3c2162/1609361799104/17+show.mp3/original/17+show.mp3";
+        function PlayShow() {
+            show.play();
+        }
+
+        var hair = new Audio();
+        hair.src = "https://static1.squarespace.com/static/5f57c8da5b4e905978984460/t/5fece99c2547c5214a852490/1609361821488/18+hair.mp3/original/18+hair.mp3";
+        function PlayHair() {
+            hair.play();
+        }
+
+        var my = new Audio();
+        my.src = "https://static1.squarespace.com/static/5f57c8da5b4e905978984460/t/5fece9b1fc8ee327ddacc271/1609361842531/19+my.mp3/original/19+my.mp3";
+        function PlayMy() {
+            my.play();
+        }
+
+        var cow = new Audio();
+        cow.src = "https://static1.squarespace.com/static/5f57c8da5b4e905978984460/t/5fece9d018d44937a97a580f/1609361873592/20+cow.mp3/original/20+cow.mp3";
+        function PlayCow() {
+            cow.play();
+        }
+
+        var pea = new Audio();
+        pea.src = "https://static1.squarespace.com/static/5f57c8da5b4e905978984460/t/5fece9f7ac5ecf06b6bcc9ec/1609361912798/21+pea.mp3/original/21+pea.mp3";
+        function PlayPea() {
+            pea.play();
+        }
+
+        var boat = new Audio();
+        boat.src = "https://static1.squarespace.com/static/5f57c8da5b4e905978984460/t/5fecea138268c96dbbe3e369/1609361940262/22+boat.mp3/original/22+boat.mp3";
+        function PlayBoat() {
+            boat.play();
+        }
+
+        var tea = new Audio();
+        tea.src = "https://static1.squarespace.com/static/5f57c8da5b4e905978984460/t/5fecef812547c5214a865e91/1609363331501/23+tea.mp3/original/23+tea.mp3";
+        function PlayTea() {
+            tea.play();
+        }
+
+        var dog = new Audio();
+        dog.src = "https://static1.squarespace.com/static/5f57c8da5b4e905978984460/t/5fecefcda6a0ae63d6858140/1609363406443/24+dog.mp3/original/24+dog.mp3";
+        function PlayDog() {
+            dog.play();
+        }
+
+        var cheese = new Audio();
+        cheese.src = "https://static1.squarespace.com/static/5f57c8da5b4e905978984460/t/5fecefe6289de731b357495a/1609363431589/25+cheese.mp3/original/25+cheese.mp3";
+        function PlayCheese() {
+            cheese.play();
+        }
+
+        var june = new Audio();
+        june.src = "https://static1.squarespace.com/static/5f57c8da5b4e905978984460/t/5feceff6289de731b3574e5c/1609363447861/26+June.mp3/original/26+June.mp3";
+        function PlayJune() {
+            june.play();
+        }
+
+        var car = new Audio();
+        car.src = "https://static1.squarespace.com/static/5f57c8da5b4e905978984460/t/5fecf0102fb5c129f2acd333/1609363473758/27+car.mp3/original/27+car.mp3";
+        function PlayCar() {
+            car.play();
+        }
+
+        var go = new Audio();
+        go.src = "https://static1.squarespace.com/static/5f57c8da5b4e905978984460/t/5fecf02b232e037c66266f10/1609363500294/28+go.mp3/original/28+go.mp3";
+        function PlayGo() {
+            go.play();
+        }
+
+        var fly = new Audio();
+        fly.src = "https://static1.squarespace.com/static/5f57c8da5b4e905978984460/t/5fecf0500e058f15c9156755/1609363537853/29+fly.mp3/original/29+fly.mp3";
+        function PlayFly() {
+            fly.play();
+        }
+
+        var video = new Audio();
+        video.src = "https://static1.squarespace.com/static/5f57c8da5b4e905978984460/t/5fecf06417af6f5d19d4d02a/1609363557357/30+video.mp3/original/30+video.mp3";
+        function PlayVideo() {
+            video.play();
+        }
+
+        var think = new Audio();
+        think.src = "https://static1.squarespace.com/static/5f57c8da5b4e905978984460/t/5fecf091dac66e1e1673b1a8/1609363602417/31+think.mp3/original/31+think.mp3";
+        function PlayThink() {
+            think.play();
+        }
+
+        var thisaud = new Audio();
+        thisaud.src = "https://static1.squarespace.com/static/5f57c8da5b4e905978984460/t/5fecf0a7673a147fcc3d9c37/1609363624684/32+this.mp3/original/32+this.mp3";
+        function PlayThisaud() {
+            thisaud.play();
+        }
+
+        var see = new Audio();
+        see.src = "https://static1.squarespace.com/static/5f57c8da5b4e905978984460/t/5fecf0bfa6a0ae63d685b242/1609363649058/33+see.mp3/original/33+see.mp3";
+        function PlaySee() {
+            see.play();
+        }
+
+        var zoo = new Audio();
+        zoo.src = "https://static1.squarespace.com/static/5f57c8da5b4e905978984460/t/5fecf0d617af6f5d19d4e6ea/1609363671001/34+zoo.mp3/original/34+zoo.mp3";
+        function PlayZoo() {
+            zoo.play();
+        }
+
+        var shall = new Audio();
+        shall.src = "https://static1.squarespace.com/static/5f57c8da5b4e905978984460/t/5fecf12318d44937a97bc816/1609363748825/35+shall.mp3/original/35+shall.mp3";
+        function PlayShall() {
+            shall.play();
+        }
+
+        var television = new Audio();
+        television.src = "https://static1.squarespace.com/static/5f57c8da5b4e905978984460/t/5fecf1532fb5c129f2ad0e1e/1609363796288/36+television.mp3/original/36+television.mp3";
+        function PlayTelevision() {
+            television.play();
+        }
+
+        var man = new Audio();
+        man.src = "https://static1.squarespace.com/static/5f57c8da5b4e905978984460/t/5fecf1688268c96dbbe530b8/1609363817290/37+man.mp3/original/37+man.mp3";
+        function PlayMan() {
+            man.play();
+        }
+
+        var now = new Audio();
+        now.src = "https://static1.squarespace.com/static/5f57c8da5b4e905978984460/t/5fecf17d2547c5214a86d62d/1609363839374/38+now.mp3/original/38+now.mp3";
+        function PlayNow() {
+            now.play();
+        }
+
+        var sing = new Audio();
+        sing.src = "https://static1.squarespace.com/static/5f57c8da5b4e905978984460/t/5fecf19517af6f5d19d51b15/1609363862096/39+sing.mp3/original/39+sing.mp3";
+        function PlaySing() {
+            sing.play();
+        }
+
+        var hat = new Audio();
+        hat.src = "https://static1.squarespace.com/static/5f57c8da5b4e905978984460/t/5fecf1b20e058f15c915ae5b/1609363891936/40+hat.mp3/original/40+hat.mp3";
+        function PlayHat() {
+            hat.play();
+        }
+
+        var love = new Audio();
+        love.src = "https://static1.squarespace.com/static/5f57c8da5b4e905978984460/t/5fecf1c52fb5c129f2ad1f3c/1609363911623/41+love.mp3/original/41+love.mp3";
+        function PlayLove() {
+            love.play();
+        }
+
+        var red = new Audio();
+        red.src = "https://static1.squarespace.com/static/5f57c8da5b4e905978984460/t/5fecf1eb634c4829a832804a/1609363948730/42+red.mp3/original/42+red.mp3";
+        function PlayRed() {
+            red.play();
+        }
+
+        var wet = new Audio();
+        wet.src = "https://static1.squarespace.com/static/5f57c8da5b4e905978984460/t/5fecf1ff89898a72c70593c9/1609363968457/43+wet.mp3/original/43+wet.mp3";
+        function PlayWet() {
+            wet.play();
+        }
+
+        var yes = new Audio();
+        yes.src = "https://static1.squarespace.com/static/5f57c8da5b4e905978984460/t/5fecf2102fb5c129f2ad2b22/1609363986068/44+yes.mp3/original/44+yes.mp3";
+        function PlayYes() {
+            yes.play();
         }
     </script>
 
